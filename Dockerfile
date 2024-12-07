@@ -7,6 +7,6 @@ RUN apt-get update && \
 
 RUN echo 'root:root' | chpasswd
 
-EXPOSE 22
+EXPOSE 8000
 
 CMD ["/usr/bin/shellinaboxd","-t","-s","/:LOGIN"]
